@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskPlannerApp.RegisterPage"
+             Title="RegisterPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <!-- Name Field -->
+        <Label Text="Name" />
+        <Entry x:Name="NameEntry" Placeholder="Enter your name" />
+
+        <!-- Email Field -->
+        <Label Text="Email" />
+        <Entry x:Name="EmailEntry" Placeholder="Enter your email" Keyboard="Email" />
+
+        <!-- PasswordHash Field -->
+        <Label Text="Password" />
+        <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True" />
+    </VerticalStackLayout>
+</ContentPage>
